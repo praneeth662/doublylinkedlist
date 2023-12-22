@@ -109,7 +109,7 @@ class DoublyLinkedList:
             temp_node=self.get(index-1)
             new_node.next = temp_node.next
             new_node.prev=temp_node
-            temp_node.next.prev=new_node
+            new_node.next.prev=new_node
             temp_node.next=new_node
             self.length += 1
             
